@@ -9,6 +9,7 @@
 2. Switch to app directory
 
 3. Switch to dev breanch
+  git switch dev
 
 4. Install dependencies
 
