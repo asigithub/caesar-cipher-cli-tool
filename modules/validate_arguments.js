@@ -1,11 +1,11 @@
 import fs from 'fs';
+import errorHandler from './showError.js'
 
-const errorHandler = (error) => {
-  if (error) {
-    process.stderr.write(error.message + '\n');
-    process.exit(1);
-  }
-}
+/**
+ * validate arguments
+ *
+ * @param {object} commandArguments - object of arguments
+ */
 
 const validateArguments = (commandArguments) => {
   if (!commandArguments.action) {
